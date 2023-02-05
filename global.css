@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #333E44;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+p {
+  color: #475E69;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+/* HEADER */
+header {
+  background: #1F2E35;
+  padding: 0.8rem 2rem;
+}
+
+header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* MAIN */
+section {
+  padding: 1.8rem 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section p {
+  text-align: center;
+}
+
+/* SECTION - hero */
+section#hero {
+  max-width: none;
+  background: #1F2E35;
+  padding-bottom: 3rem;
+}
+
+section#hero > div {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#hero .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 500px;
+}
+
+section#hero > div > img {
+  width: 100%;
+  max-width: 470px;
+  margin-bottom: 1.5rem;
+}
+
+section#hero p {
+  color: white;
+}
+
+section#hero button {
+  width: 100%;
+  max-width: 175px;
+  padding: .8rem 1.25rem;
+  border-radius: .5rem;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: white;
+  background: #0086D6;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section#hero #who-use {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .8rem;
+}
+
+section#hero #who-use img {
+  width: 100%;
+  max-width: 70px;
+}
+
+section#hero #who-use span {
+  color: #0086D6;
+}
+
+/* SECTION - 2 */
+section .count {
+  width: 100%;
+  max-width: 360px;
+  padding: 1.25rem 2rem;
+  text-align: center;
+}
+
+section .count span {
+  margin-bottom: .5rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+section .count h3 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333E44;
+}
+
+section .count:nth-child(1) span {
+  color: #0086D6;
+}
+
+section .count:nth-child(2) span {
+  color: #2FD886;
+}
+
+section .count:nth-child(3) span {
+  color: #FF3366;
+}
+
+/* SECTION - most-popular-tools */
+section#most-popular-tools {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/* SECTION - new-comer-tools */
+section#new-comer-tools {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/* CARDS */
+section .cards {
+  margin-top: 3.2rem;
+}
+
+section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+section .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 340px;
+  margin-bottom: 2rem;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+section .card > div:not(.img) {
+  padding: 1rem;
+}
+
+section .card .img {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F5F5F5;
+}
+
+section .card img {
+  margin: 0 auto;
+}
+
+section .card .header {
+  margin: 1.75rem 0 .5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .card .header .title {
+  color: #333E44;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+section .card .header .plan {
+  color: #20C08B;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+section .card p {
+  text-align: left;
+}
+
+section .card .areas {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+section .card .areas span {
+  color: #0086D6;
+  font-weight: 500;
+  font-size: .8rem;
+  padding: .5rem .6rem;
+  background: #E1EBFB;
+  border-radius: 4px;
+}
+
+@media (min-width: 1024px) {
+  section#hero > div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  section#hero .text {
+    order: 1;
+  }
+
+  section#hero .text h1,
+  section#hero .text p {
+    text-align: left;
+  }
+
+  section#hero button {
+    margin: 0 0;
+  }
+
+  section#hero > div > img {
+    order: 2;
+  }
+}
