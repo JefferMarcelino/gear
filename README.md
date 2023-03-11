@@ -48,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="public/gear-logo.png" alt="Preview">
+<img src=".github/preview.png" alt="Preview">
 
 A simple landing page created for funny.
 
